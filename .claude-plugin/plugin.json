@@ -1,0 +1,12 @@
+{
+  "name": "review-to-pr",
+  "version": "0.1.0",
+  "description": "Automate the pipeline from code review findings to GitHub Issues, isolated worktree fixes, and Pull Requests with severity-based merge strategies.",
+  "author": {
+    "name": "Xiaodong Zheng",
+    "url": "https://github.com/sheldon123z"
+  },
+  "repository": "https://github.com/sheldon123z/review-to-pr",
+  "license": "MIT",
+  "keywords": ["code-review", "automation", "worktree", "github", "roborev"]
+}

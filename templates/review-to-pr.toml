@@ -1,0 +1,30 @@
+# review-to-pr 项目配置
+# 文档: https://github.com/sheldon123z/review-to-pr
+
+[review]
+default_source = "roborev"         # roborev / inline
+agent = "{agent}"                  # 默认审查/修复 agent
+model = "{model}"                  # 留空使用 agent 默认模型
+backup_agent = "{backup_agent}"    # 备用 agent
+backup_model = "{backup_model}"    # 备用模型
+
+[merge]
+auto_merge_severity = ["low"]      # 哪些严重度自动合并
+ci_timeout_seconds = 300           # CI 等待超时
+merge_method = "squash"            # squash / merge / rebase
+
+[loop_prevention]
+excluded_branches = ["fix/review-*"]
+excluded_commit_patterns = [
+  "🤖 fix: review-to-pr",
+  "Co-Authored-By: review-to-pr"
+]
+
+[templates]
+issue_title = "🔍 代码审查: {subject}"
+pr_title = "🤖 fix: 修复 #{issue_num} [{severity}]"
+language = "zh"                    # zh / en
+
+[guidelines]
+severity_language = "en"           # severity 标签强制英文
+description_language = "zh"        # 审查描述语言
