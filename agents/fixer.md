@@ -1,6 +1,8 @@
 ---
+name: fixer
 description: "Autonomous code fixer that works inside an isolated git worktree. Reads a review report (.review-report.md) and applies fixes to resolve all findings. Use PROACTIVELY when review-to-pr creates a worktree for non-roborev review sources that need agent-driven fixing."
 model: sonnet
+color: green
 tools: ["Read", "Write", "Edit", "Bash", "Glob", "Grep"]
 ---
 
