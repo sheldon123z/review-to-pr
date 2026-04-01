@@ -1,0 +1,20 @@
+{
+  "name": "review-to-pr",
+  "owner": {
+    "name": "Xiaodong Zheng",
+    "url": "https://github.com/sheldon123z"
+  },
+  "metadata": {
+    "description": "Automate the pipeline from code review findings to GitHub Issues, isolated worktree fixes, and Pull Requests",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "review-to-pr",
+      "source": "./",
+      "description": "Code review → GitHub Issue → Worktree fix → PR with severity-based merge strategy",
+      "category": "automation",
+      "tags": ["code-review", "automation", "worktree", "github", "roborev", "pr"]
+    }
+  ]
+}

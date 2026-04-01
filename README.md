@@ -17,8 +17,30 @@ Code Review → GitHub Issue → Worktree Fix → PR → Merge Strategy
 
 ## Install
 
+### From GitHub (recommended)
+
 ```bash
-claude plugin add /path/to/review-to-pr
+# Step 1: Add marketplace (one-time)
+claude plugins marketplace add sheldon123z/review-to-pr
+
+# Step 2: Install plugin
+claude plugins install review-to-pr
+```
+
+### From local path
+
+```bash
+# Clone the repo
+git clone https://github.com/sheldon123z/review-to-pr.git
+
+# Install from local directory
+claude plugins install review-to-pr --scope user
+```
+
+### Verify
+
+```bash
+claude plugins list | grep review-to-pr
 ```
 
 ## Quick Start
